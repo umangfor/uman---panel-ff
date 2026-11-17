@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090b">
+  <meta name="description" content="UMANG FF PANEL — mobile-friendly aim practice and gaming settings companion.">
+  <title>UMANG FF PANEL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">U</span><span>UMANG <b>FF PANEL</b></span></a>
+  <span class="status"><i></i> PRACTICE MODE</span>
+</header>
+<main class="shell">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">TRAIN SMART • PLAY FAIR</p>
+      <h1>LEVEL UP<br><em>YOUR AIM.</em></h1>
+      <p class="sub">Your mobile practice hub for reflex drills, sensitivity notes and HUD planning.</p>
+      <a class="primary-btn" href="#trainer">START TRAINING <span>↗</span></a>
+    </div>
+    <div class="hero-art" aria-hidden="true"><div class="target-ring ring-one"></div><div class="target-ring ring-two"></div><div class="target-dot"></div><span class="crosshair">+</span></div>
+    <div class="hero-bottom"><span>UMANG GAMING HUB</span><span>BUILT FOR MOBILE</span></div>
+  </section>
+
+  <section class="stats-grid" aria-label="Practice statistics">
+    <article class="stat-card"><span>SESSIONS</span><strong id="sessions">0</strong><small>training rounds</small></article>
+    <article class="stat-card"><span>HITS</span><strong id="hits">0</strong><small>targets tapped</small></article>
+    <article class="stat-card"><span>BEST SCORE</span><strong id="best">—</strong><small>hits / round</small></article>
+  </section>
+
+  <section class="section" id="trainer">
+    <div class="section-heading"><div><p class="eyebrow">01 — REFLEX DRILL</p><h2>AIM TRAINER</h2></div><span class="tag">LOCAL PRACTICE</span></div>
+    <p class="section-intro">Tap the red targets as quickly as possible. This browser mini-game is for practice only and does not connect to or modify Free Fire.</p>
+    <div class="trainer-panel">
+      <div class="trainer-bar"><span id="game-state">READY WHEN YOU ARE</span><span>TIME <b id="timer">20.0</b>s</span></div>
+      <div class="arena" id="arena"><div class="arena-hint" id="arena-hint">PRESS START<br><small>Then tap the targets</small></div></div>
+      <div class="trainer-controls"><button class="primary-btn" id="start-btn" type="button">START 20s ROUND</button><button class="secondary-btn" id="reset-btn" type="button">RESET</button></div>
+      <p class="result" id="result" aria-live="polite">Your score will appear here.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading"><div><p class="eyebrow">02 — DEVICE SETUP</p><h2>SENSITIVITY NOTES</h2></div><span class="tag">SAVE ON DEVICE</span></div>
+    <p class="section-intro">These are editable personal notes, not guaranteed pro settings. Tune them in the game's own settings to suit your device and play style.</p>
+    <div class="settings-card">
+      <div class="setting-row"><label for="general">General <output id="general-val">90</output></label><input id="general" type="range" min="0" max="200" value="90"></div>
+      <div class="setting-row"><label for="red-dot">Red Dot <output id="red-dot-val">85</output></label><input id="red-dot" type="range" min="0" max="200" value="85"></div>
+      <div class="setting-row"><label for="scope2">2× Scope <output id="scope2-val">80</output></label><input id="scope2" type="range" min="0" max="200" value="80"></div>
+      <div class="setting-row"><label for="scope4">4× Scope <output id="scope4-val">75</output></label><input id="scope4" type="range" min="0" max="200" value="75"></div>
+      <div class="setting-row"><label for="sniper">Sniper Scope <output id="sniper-val">50</output></label><input id="sniper" type="range" min="0" max="200" value="50"></div>
+      <div class="setting-row"><label for="free-look">Free Look <output id="free-look-val">70</output></label><input id="free-look" type="range" min="0" max="200" value="70"></div>
+      <div class="settings-actions"><button class="primary-btn" id="save-settings" type="button">SAVE SETTINGS</button><button class="secondary-btn" id="reset-settings" type="button">DEFAULTS</button></div>
+      <p class="save-note" id="save-note" aria-live="polite">Settings are stored only in this browser on this device.</p>
+    </div>
+  </section>
+
+  <section class="section two-col">
+    <article class="mini-card">
+      <p class="eyebrow">03 — CONTROL LAYOUT</p><h2>HUD PLANNER</h2>
+      <p>Write down your preferred button positions before changing your in-game layout.</p>
+      <label class="field-label" for="hud-notes">MY HUD NOTES</label>
+      <textarea id="hud-notes" rows="5" placeholder="Example: Fire button — right side, thumb reach..."></textarea>
+      <button class="primary-btn full" id="save-hud" type="button">SAVE HUD NOTES</button>
+      <p class="save-note" id="hud-status" aria-live="polite">Notes stay on this device.</p>
+    </article>
+    <article class="mini-card">
+      <p class="eyebrow">04 — FAIR PLAY</p><h2>PLAY CLEAN.</h2>
+      <p class="fair-icon">◎</p>
+      <p>This is an independent fan-made practice companion. It does not provide auto-aim, auto-headshot, game modification, cheats or anti-cheat bypasses.</p>
+      <span class="tag">PRACTICE • IMPROVE • REPEAT</span>
+    </article>
+  </section>
+  <footer><strong>UMANG FF PANEL</strong><span>Unofficial fan-made project. Not affiliated with Garena or Free Fire.</span></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
